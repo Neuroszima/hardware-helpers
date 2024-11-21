@@ -34,11 +34,13 @@ def execute(connection_instance: serial.Serial, command_):
 # LF/HF reject is not available for Glitch triggering!!!
 # Noise reject is available for Glitch triggering, as well as trigger mode (normal/auto/autolvl)
 
+
+# uncomment/comment the ones to be executed in a series after connecting to oscilloscope
 commands = [
-    # b'*IDN?',
+    b'*IDN?',
     # b'*RST',
-    # b':ANALOG1:RANGE .4;',
-    # b':ANAL1:RANG?',
+    b':ANALOG1:RANGE .4;',
+    b':ANAL1:RANG?',
     # b':TRIGGER:GLITCH:QUALIFIER RANGE;',
     # semicolon is mandatory as the size of the query is too big
     # this collides with the next query in line
@@ -52,8 +54,8 @@ commands = [
     # b':DIGITIZE',
     # b':WAVEFORM:POINTS 4000',
     # b':WAVEFORM:PREAMBLE?',
-    b':WAVEFORM:DATA?',
-    # b'*RST',
+    # b':WAVEFORM:DATA?',
+    b'*RST',
     # b':ACQ:DATA?',
 ]
 

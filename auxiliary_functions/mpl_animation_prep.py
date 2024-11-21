@@ -1,17 +1,13 @@
-from typing import List, Optional, Union, Dict
-from math import sqrt, pow, log
-from copy import deepcopy
+from typing import List, Optional
 
 import numpy
-import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import animation
 from matplotlib.animation import FuncAnimation, PillowWriter    # noqa
 from matplotlib.axes import Axes
 from matplotlib.artist import Artist
-from matplotlib.figure import Figure, SubFigure
+from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
-from matplotlib.spines import Spine
 
 
 def rgb_to_matlab(r, g, b):

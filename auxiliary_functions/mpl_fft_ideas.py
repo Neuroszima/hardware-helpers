@@ -1,17 +1,13 @@
-from typing import List, Optional, Union, Dict
+from typing import List
 from math import sqrt, pow, log
 from copy import deepcopy
 
 import numpy
-import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import animation
 from matplotlib.animation import FuncAnimation, PillowWriter    # noqa
 from matplotlib.axes import Axes
-from matplotlib.artist import Artist
 from matplotlib.figure import Figure, SubFigure
-from matplotlib.lines import Line2D
-from matplotlib.spines import Spine
 
 
 from .bin_data_file_1 import bin_data
